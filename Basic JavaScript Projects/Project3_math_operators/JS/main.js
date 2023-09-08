@@ -1,6 +1,12 @@
-// Generate a random number between 1 and 100 using Math.random()
-const randomNumber = Math.floor(Math.random() * 100) + 1;
+// Define a dictionary
+var myDictionary = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+};
 
-// Display the random number in the "Math" paragraph element
-const mathParagraph = document.getElementById("Math");
-mathParagraph.textContent = `Random Number: ${randomNumber}`;
+// Function to display a dictionary value
+function displayValue() {
+    var result = myDictionary["key2"]; // Change "key2" to the key you want to display
+    document.getElementById("Dictionary").innerHTML = result;
+}
