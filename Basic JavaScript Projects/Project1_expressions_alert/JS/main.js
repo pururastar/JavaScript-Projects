@@ -1,26 +1,14 @@
-// This is a comment. It won't be executed by the browser.
+// Create variables
+var Sent1 = "This is the beginning of the string";
+var Sent2 = " and this is the end of the string";
 
-// Assign a string value to a variable.
-var greeting = "Hello, World!";
+// Concatenate the variables and display the result using alert()
+window.alert(Sent1 + Sent2);
 
-// Display a pop-up alert with the greeting.
-window.alert(greeting);
+// Create an expression
+var result = 10 * 5;
 
-// Concatenate two strings and display them.
-var firstName = "John";
-var lastName = "Doe";
-var fullName = firstName + " " + lastName;
-document.write(fullName);
+// Display the expression result using document.write()
+document.write("<p>The result of the expression 10 * 5 is: " + result + "</p>");
 
-// Assign multiple variables in one statement.
-var a = 5, b = 10, c = 15;
-
-// Calculate the sum of variables a and b.
-var sum = a + b;
-document.write("<br>Sum: " + sum);
-
-// Write an expression.
-var x = 5;
-var y = 10;
-var result = x * y;
-document.write("<br>Result: " + result);
+// This is a comment explaining the code
