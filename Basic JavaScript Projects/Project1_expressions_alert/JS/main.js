@@ -1,5 +1,3 @@
-// Assign a variable to a string value
-var greeting = "Hello, World!";
+var myString = "This is a string assignment!";
 
-// Display the variable using the document.write() method
-document.write(greeting);
+window.alert(myString);
