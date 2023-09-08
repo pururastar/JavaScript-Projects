@@ -1,4 +1,3 @@
-var firstName = "John", lastName = "Doe", age = 30;
-
-document.write(firstName);
-
+var x = 5;
+var y = 10;
+var result = x + y;
