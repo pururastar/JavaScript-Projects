@@ -1,1 +1,1 @@
-window.alert("This is a window alert!");
+document.write("Hello from JavaScript!");
