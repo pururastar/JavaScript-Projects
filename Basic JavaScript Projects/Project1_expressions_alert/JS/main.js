@@ -1,3 +1,1 @@
-var myString = "This is a string assignment!";
-
-window.alert(myString);
+var myString = "This is a string with an escaped single quote: \', and an escaped double quote: \"";
