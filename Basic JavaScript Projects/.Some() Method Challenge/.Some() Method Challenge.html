@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>.some() Method Example</title>
+</head>
+<body>
+
+<h1>.some() Method Example</h1>
+
+<button onclick="checkSome()">Check .some()</button>
+
+<div id="result"></div>
+
+<script>
+  // Function to check if any number in the array is greater than 4
+function checkSome() {
+  const numbers = [1, 2, 3, 4, 5, 6];
+  
+  const isGreaterThanFour = (num) => {
+    return num > 4;
+  };
+  
+  const result = numbers.some(isGreaterThanFour);
+
+  // Display the result in the "result" div
+  document.getElementById("result").innerHTML = `Result: ${result}`;
+}
+
+</script>
+
+</body>
+</html>
