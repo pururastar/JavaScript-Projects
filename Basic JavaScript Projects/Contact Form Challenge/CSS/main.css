@@ -1,0 +1,17 @@
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input {
+  padding: 5px;
+}
+
+.error-message {
+  color: red;
+  margin-left: 10px;
+}
