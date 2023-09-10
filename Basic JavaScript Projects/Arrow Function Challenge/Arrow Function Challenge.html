@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow Function Challenge</title>
+</head>
+<body>
+    <h1>Arrow Function Challenge</h1>
+    <button id="normalFunction">Click me for normal function</button>
+    <button id="arrowFunction">Click me for arrow function</button>
+
+    <script>
+        // Normal Function
+        function addTwoNumbers(a, b) {
+            alert(`The sum is: ${a + b}`);
+        }
+
+        document.getElementById('normalFunction').addEventListener('click', function() {
+            addTwoNumbers(5, 3);
+        });
+
+        // Arrow Function
+        const addTwoNumbersArrow = (a, b) => {
+            alert(`The sum is: ${a + b}`);
+        };
+
+        document.getElementById('arrowFunction').addEventListener('click', () => {
+            addTwoNumbersArrow(5, 3);
+        });
+    </script>
+</body>
+</html>
