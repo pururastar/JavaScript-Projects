@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        #calculator {
+            width: 200px;
+            margin: auto;
+        }
+        button {
+            width: 48px;
+            height: 48px;
+            font-size: 18px;
+        }
+        #display {
+            width: 192px;
+            height: 32px;
+            font-size: 24px;
+        }
+    </style>
+	<link rel="stylesheet" type="text/css" href="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\Basic JavaScript Projects\HTML Calculator Assignment\CSS\main.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" disabled/>
+        <br>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <br>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <br>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <br>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendToDisplay('/')">/</button>
+    </div>
+
+    <script>
+        let display = document.getElementById('display');
+        let currentInput = '';
+
+        function clearDisplay() {
+            currentInput = '';
+            display.value = '';
+        }
+
+        function appendToDisplay(value) {
+            currentInput += value;
+            display.value = currentInput;
+        }
+
+        function calculate() {
+            try {
+                display.value = eval(currentInput);
+                currentInput = display.value;
+            } catch (e) {
+                display.value = 'Error';
+            }
+        }
+    </script>
+	<script src="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\Basic JavaScript Projects\HTML Calculator Assignment\JS\main.js" defer></script>
+
+</body>
+</html>
