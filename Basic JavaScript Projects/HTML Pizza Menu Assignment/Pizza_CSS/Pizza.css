@@ -1,0 +1,10 @@
+/* Styles go here */
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+button {
+  display: block;
+  margin: auto;
+}
