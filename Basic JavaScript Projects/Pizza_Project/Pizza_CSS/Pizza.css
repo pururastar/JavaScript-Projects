@@ -1,10 +1,15 @@
-/* Styles go here */
-h1 {
-  text-align: center;
-  color: blue;
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
 }
 
-button {
-  display: block;
-  margin: auto;
+h1, h2 {
+  color: #333;
+}
+
+#menu {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
 }

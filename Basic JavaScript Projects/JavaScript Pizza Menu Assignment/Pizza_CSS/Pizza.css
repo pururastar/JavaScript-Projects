@@ -1,0 +1,34 @@
+/* Assign a background color to your <body> element */
+body {
+  background-color: #f4f4f4;
+}
+
+/* Assign a font family to all <h1> elements */
+h1 {
+  font-family: 'Arial, sans-serif';
+}
+
+/* Assign a color to all <h1> elements */
+h1 {
+  color: #333;
+}
+
+/* Assign a font family to all <h3> elements */
+h3 {
+  font-family: 'Georgia, serif';
+}
+
+/* Assign a color to all <h3> elements */
+h3 {
+  color: #666;
+}
+
+/* Assign a font family to all <div> elements */
+div {
+  font-family: 'Verdana, sans-serif';
+}
+
+/* Assign a color to all <div> elements */
+div {
+  color: #444;
+}
