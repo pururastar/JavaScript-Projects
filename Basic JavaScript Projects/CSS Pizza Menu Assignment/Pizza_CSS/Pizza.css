@@ -1,0 +1,50 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add a background color and some padding to the page */
+body {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Style the header */
+h1 {
+  background-color: #ff6666;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Style the h2 elements */
+h2 {
+  font-size: 24px;
+  padding: 10px;
+}
+
+/* Style the pizza-item class */
+.pizza-item {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Style the buttons */
+button {
+  background-color: #ff6666;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Add a hover effect to buttons */
+button:hover {
+  background-color: #ff4d4d;
+}
