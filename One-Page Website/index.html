@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One-Page Website</title>
+  <link rel="stylesheet" type="text/css" href="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\CSS\styles.css">
+</head>
+<body>
+
+  <div class="image-gallery">
+    <img src="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\thumbnail1.jpg" data-large="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\large1.jpg" onclick="openLightbox(this)">
+    <img src="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\thumbnail2.jpg" data-large="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\large2.jpg" onclick="openLightbox(this)">
+    <img src="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\thumbnail3.jpg" data-large="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\large3.jpg" onclick="openLightbox(this)">
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img">
+  </div>
+
+  <script src="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\JS\one_page_website.js"></script>
+</body>
+</html>
