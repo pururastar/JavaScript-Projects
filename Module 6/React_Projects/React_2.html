@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Assignment</title>
+    <!-- Link to React and React DOM libraries -->
+    <script src="React_Projects/react.js"></script>
+    <script src="React_Projects/react-dom.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Assignment 2</title>
+    <!-- Link to React and React DOM libraries via URL -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <!-- Create a div with an id to render React content into -->
+    <div id="root"></div>
+
+    <!-- Your React code will go here -->
+   <script>
+    // Create a React component class
+    class MyButton extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { count: 0 };
+        }
+
+        // Function to handle button click and update the state
+        handleClick = () => {
+            this.setState({ count: this.state.count + 1 });
+        }
+
+        render() {
+            return (
+                <div>
+                    <button onClick={this.handleClick}>Click Me</button>
+                    <p>Button Clicked: {this.state.count} times</p>
+                </div>
+            );
+        }
+    }
+
+    // Render the MyButton component into the 'root' div
+    ReactDOM.render(
+        <MyButton />,
+        document.getElementById('root')
+    );
+</script>
+
+</body>
+</html>
