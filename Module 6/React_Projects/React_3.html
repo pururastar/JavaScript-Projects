@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Assignment 3</title>
+    <!-- Link to React and JSX libraries via URL -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <!-- Create a div with an id to render React content into -->
+    <div id="root"></div>
+
+    <!-- Your JSX code will go here -->
+  <script type="text/babel">
+    // Define a simple JSX component
+    class MyComponent extends React.Component {
+        render() {
+            return (
+                <div>
+                    <h1>Hello, JSX!</h1>
+                </div>
+            );
+        }
+    }
+
+    // Render the MyComponent JSX into the 'root' div
+    ReactDOM.render(
+        <MyComponent />,
+        document.getElementById('root')
+    );
+</script>
+
+</body>
+</html>
