@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Assignment 4</title>
+</head>
+<body>
+    <!-- Your React app will go here -->
+    <div id="root"></div>
+
+    <!-- Include React and ReactDOM via URLs (CDN) -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- Your React code will be placed here -->
+    <script type="text/babel">
+    // Define a simple React component
+    class MyComponent extends React.Component {
+        render() {
+            return (
+                <div>
+                    <h1>Hello, React!</h1>
+                </div>
+            );
+        }
+    }
+
+    // Render the MyComponent JSX into the 'root' div
+    ReactDOM.render(
+        <MyComponent />,
+        document.getElementById('root')
+    );
+</script>
+
+</body>
+</html>
