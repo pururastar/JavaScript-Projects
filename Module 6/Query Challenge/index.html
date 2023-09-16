@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Event and Effect Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<p id="myParagraph">This is a paragraph.</p>
+<button id="myButton">Click me</button>
+
+<script>
+    $(document).ready(function() {
+        // Attach a click event to the button
+        $("#myButton").click(function() {
+            // Trigger a fadeOut effect on the paragraph
+            $("#myParagraph").fadeOut();
+        });
+    });
+</script>
+
+</body>
+</html>
