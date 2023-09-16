@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Assignment</title>
+    <!-- Link to React and React DOM libraries -->
+    <script src="React_Projects/react.js"></script>
+    <script src="React_Projects/react-dom.js"></script>
+</head>
+<body>
+    <!-- Your React code will go here -->
+    <div id="root"></div>
+       <script>
+    // Create a React component class
+    var Timer = React.createClass({
+        getInitialState: function () {
+            return { seconds: 0 };
+        },
+        componentDidMount: function () {
+            // Update the timer every second
+            this.interval = setInterval(function () {
+                this.setState({ seconds: this.state.seconds + 1 });
+            }.bind(this), 1000);
+        },
+        componentWillUnmount: function () {
+            clearInterval(this.interval);
+        },
+        render: function () {
+            return (
+                <div>
+                    <p>Timer: {this.state.seconds} seconds</p>
+                </div>
+            );
+        }
+    });
+
+    // Render the Timer component into the 'root' div
+    ReactDOM.render(
+        <Timer />,
+        document.getElementById('root')
+    );
+</script>
+
+ 
+</body>
+</html>
