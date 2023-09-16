@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Challenge</title>
+</head>
+<body>
+    <h1>Library</h1>
+    <div id="bookList"></div>
+
+    <script>
+        // Function to load and display XML data
+        function loadXML() {
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+
+            // Define a callback function to handle the response
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Parse the XML response
+                    var xmlDoc = xhr.responseXML;
+
+                    // Get all book elements
+                    var books = xmlDoc.getElementsByTagName("book");
+
+                    // Create a list of books
+                    var bookList = document.getElementById("bookList");
+                    var ul = document.createElement("ul");
+
+                    // Iterate through each book and display title and author
+                    for (var i = 0; i < books.length; i++) {
+                        var book = books[i];
+                        var title = book.getElementsByTagName("title")[0].textContent;
+                        var author = book.getElementsByTagName("author")[0].textContent;
+
+                        var li = document.createElement("li");
+                        li.textContent = "Title: " + title + ", Author: " + author;
+                        ul.appendChild(li);
+                    }
+
+                    // Append the list to the page
+                    bookList.appendChild(ul);
+                }
+            };
+
+            // Open and send the GET request to the XML file
+            xhr.open("GET", "library.xml", true);
+            xhr.send();
+        }
+
+        // Call the loadXML function to load and display XML data
+        loadXML();
+    </script>
+</body>
+</html>
