@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>One-Page Website</title>
-  <link rel="stylesheet" type="text/css" href="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\CSS\styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your One-Page Website</title>
+    <!-- Add your CSS link here -->
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </head>
 <body>
+    <!-- Your website content goes here -->
+    <!-- For the images, use the format: thumbnail and large images -->
+    <div class="image-gallery">
+        <img src="Images/thumbnail1.jpg" data-large="Images/large1.jpg" onclick="openLightbox(this)">
+        <img src="Images/thumbnail2.jpg" data-large="Images/large2.jpg" onclick="openLightbox(this)">
+        <img src="Images/thumbnail3.jpg" data-large="Images/large3.jpg" onclick="openLightbox(this)">
+        <!-- Add more images here as needed -->
+    </div>
 
-  <div class="image-gallery">
-    <img src="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\thumbnail1.jpg" data-large="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\large1.jpg" onclick="openLightbox(this)">
-    <img src="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\thumbnail2.jpg" data-large="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\large2.jpg" onclick="openLightbox(this)">
-    <img src="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\thumbnail3.jpg" data-large="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\Images\large3.jpg" onclick="openLightbox(this)">
-  </div>
+    <!-- The Lightbox/Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img">
+    </div>
 
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="close">&times;</span>
-    <img id="lightbox-img">
-  </div>
-
-  <script src="D:\Users\Rodrigo\Desktop\WEBDEVELOPER\JavaScript-Projects\One-Page Website\JS\one_page_website.js"></script>
+    <!-- Link your JavaScript file -->
+    <script src="JS/one_page_website.js"></script>
 </body>
 </html>
